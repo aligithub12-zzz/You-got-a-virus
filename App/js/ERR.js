@@ -37,8 +37,8 @@ xui.Class('App.ERR', 'xui.Module',{
             append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button9")
-                .setLeft("28.19047619047619em")
-                .setTop("16.761904761904763em")
+                .setLeft("10.666666666666666em")
+                .setTop("12.698412698412698em")
                 .setWidth("21.942857142857143em")
                 .setHeight("11.961904761904762em")
                 .setCaption("I do care!!!")
