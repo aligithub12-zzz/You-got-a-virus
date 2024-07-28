@@ -19,7 +19,50 @@ xui.Class('App.ERR', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label18")
+                .setDock("fill")
+                .setLeft("6.095238095238095em")
+                .setTop("3.0476190476190474em")
+                .setWidth("29.104761904761904em")
+                .setHeight("27.123809523809523em")
+                .setCaption("YOU DON'T CARE?!")
+                .setHAlign("center")
+                .setFontColor("#FF0000")
+                .setFontSize("7EM")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button9")
+                .setLeft("28.19047619047619em")
+                .setTop("16.761904761904763em")
+                .setWidth("21.942857142857143em")
+                .setHeight("11.961904761904762em")
+                .setCaption("I do care!!!")
+                .setFontColor("#00FF00")
+                .setFontSize("1.5em")
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "other",
+                        "target" : "msg",
+                        "args" : [ ],
+                        "method" : "busy",
+                        "event" : 1
+                    },
+                    {
+                        "desc" : "Action 2",
+                        "type" : "page",
+                        "target" : "App.LOL",
+                        "args" : [true],
+                        "method" : "switch"
+                    }
+                ])
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
