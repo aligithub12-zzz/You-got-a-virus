@@ -19,7 +19,20 @@ xui.Class('App.LOL', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label19")
+                .setLocked(true)
+                .setLeft("8.380952380952381em")
+                .setTop("7.619047619047619em")
+                .setWidth("37.48571428571429em")
+                .setHeight("16.457142857142856em")
+                .setCaption("VIRUS ACTIVATED...")
+                .setHAlign("center")
+                .setFontSize("5EM")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
