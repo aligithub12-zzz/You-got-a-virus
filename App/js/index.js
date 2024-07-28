@@ -54,6 +54,17 @@ xui.Class('App', 'xui.Module',{
                 ])
             );
             
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button14")
+                .setLeft("24.38095238095238em")
+                .setTop("35.04761904761905em")
+                .setWidth("13.561904761904762em")
+                .setHeight("5.866666666666666em")
+                .setCaption("What?")
+                .setFontSize("2.5em")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
