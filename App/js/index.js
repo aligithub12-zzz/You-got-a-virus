@@ -19,7 +19,41 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label7")
+                .setLeft("12.952380952380953em")
+                .setTop("8.380952380952381em")
+                .setWidth("39.00952380952381em")
+                .setHeight("21.02857142857143em")
+                .setCaption("YOU DOWNLOADED A VIRUS IDIOT")
+                .setHAlign("center")
+                .setFontColor("#FF0000")
+                .setFontSize("5em")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button10")
+                .setLeft("18.285714285714285em")
+                .setTop("27.428571428571427em")
+                .setWidth("23.466666666666665em")
+                .setHeight("8.152380952380952em")
+                .setCaption("???")
+                .setFontSize("2.3em")
+                .onClick([
+                    {
+                        "desc" : "Action 1",
+                        "type" : "page",
+                        "target" : "App.ERR",
+                        "args" : [true],
+                        "method" : "switch",
+                        "event" : 1
+                    }
+                ])
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
